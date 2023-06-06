@@ -12,8 +12,9 @@ from langchain.vectorstores import Chroma
 from langchain.embeddings import HuggingFaceEmbeddings, SentenceTransformerEmbeddings
 
 #load embedding model
-model_name = "intfloat/e5-large-v2"
-embedding = HuggingFaceEmbeddings(model_name=model_name)
+#model_name = "intfloat/e5-large-v2"
+#embedding = HuggingFaceEmbeddings(model_name=model_name)
+embeddings = HuggingFaceInstructEmbeddings(model_name="hkunlp/instructor-base", model_kwargs={"device": "cpu"})
 
 def chromadb(texts):
     vectordb = Chroma.from_documents(documents=texts, embedding=embedding)
