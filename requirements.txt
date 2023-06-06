@@ -2,6 +2,6 @@ langchain
 openai
 streamlit
 chromadb
-SentenceTransformerEmbeddings
+sentence-transformers
 youtube-transcript-api
 pytube
