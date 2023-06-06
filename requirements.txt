@@ -1,0 +1,7 @@
+langchain
+openai
+streamlit
+chromadb
+SentenceTransformerEmbeddings
+youtube-transcript-api
+pytube
